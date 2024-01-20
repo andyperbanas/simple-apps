@@ -2,7 +2,7 @@ services:
   web-apps:
     build: ./apps
     container_name: web-apps
-    image: image-andi
+    image: andyperbanas/image-andi
     ports: 
       - 5000:3000
     volumes:
