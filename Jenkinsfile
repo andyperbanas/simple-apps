@@ -14,6 +14,14 @@ pipeline {
                 '''
             }
         }
+        
+        stage('Copy env') {
+            steps {
+                sh '''
+                cp /root/simple-apps/apps/.env apps/
+                '''
+            }
+        }
 
         stage('Test Apps') {
             steps {
